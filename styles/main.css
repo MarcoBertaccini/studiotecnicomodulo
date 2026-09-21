@@ -133,7 +133,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .hero__coord b { color: var(--cobalt); font-weight: 400; }
 .hero h1 { font-family: var(--font-display); font-weight: 800; font-stretch: 125%; font-size: var(--step-5); letter-spacing: -0.035em; line-height: 0.92; }
 .hero h1 .thin { font-weight: 300; font-stretch: 75%; font-style: normal; color: var(--ink-soft); display: block; }
-.hero h1 .accent { color: var(--cobalt); }
+.hero h1 .accent { color: #14226E; }
 .hero__sub { margin-top: var(--sp-3); font-size: var(--step-1); color: var(--ink-soft); max-width: 40ch; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-4); }
 .hero__tags { margin-top: var(--sp-5); display: flex; flex-wrap: wrap; gap: 0.5rem 0.5rem; max-width: 46ch; }
