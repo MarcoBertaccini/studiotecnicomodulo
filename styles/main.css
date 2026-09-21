@@ -225,7 +225,8 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .infoblock__v { font-size: var(--step-1); margin-top: 0.2rem; }
 .infoblock__v a:hover { color: var(--cobalt); }
 .infoblock__note { font-size: 0.78rem; color: var(--faint); margin-top: 0.2rem; font-family: var(--font-mono); }
-.map { margin-top: var(--sp-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 16 / 9; background: var(--paper-2); }
+.contact__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-3); }
+.map { border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; height: 100%; min-height: 360px; background: var(--paper-2); }
 .map iframe { width: 100%; height: 100%; border: 0; filter: saturate(0.85); }
 
 /* Form */
