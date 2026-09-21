@@ -1,0 +1,80 @@
+/* ============================================================
+   STUDIO TECNICO MODULO — Design tokens
+   Identità "Il Modulo": griglia strutturale, blueprint in chiave
+   luminosa. Base chiara, accento cobalto, segnale arancio cantiere.
+   NB: tema singolo chiaro per scelta (no dark, no verde).
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  /* — Superfici / neutri (bias freddo verso l'accento) — */
+  --paper:        #F1F3F6;   /* fondo pagina, bianco architettonico */
+  --paper-2:      #E9ECF1;   /* sezioni alternate */
+  --surface:      #FFFFFF;   /* card / superfici sollevate */
+  --ink:          #0E1420;   /* testo principale (near-black bias blu) */
+  --ink-soft:     #333B4A;   /* testo secondario */
+  --muted:        #5A6270;   /* didascalie, meta */
+  --faint:        #676D77;   /* micro-testo (contrasto AA su fondo chiaro) */
+
+  /* — Linee della griglia / bordi — */
+  --line:         rgba(14, 20, 32, 0.12);
+  --line-strong:  rgba(14, 20, 32, 0.24);
+  --grid-line:    rgba(30, 56, 212, 0.07);  /* reticolo blueprint */
+
+  /* — Accento primario: cobalto blueprint — */
+  --cobalt:       #1E38D4;
+  --cobalt-600:   #1930B4;
+  --cobalt-050:   #E4E8FB;
+  --cobalt-tint:  rgba(30, 56, 212, 0.08);
+
+  /* — Segnale: arancio cantiere (uso parsimonioso) — */
+  --signal:       #FF5A1F;
+  --signal-050:   #FFE7DD;
+
+  /* — Semantici (form) — */
+  --ok:           #1E7A46;   /* nota: verde riservato SOLO a stato success del form, non al brand */
+  --err:          #C42B1C;
+
+  /* — Tipografia — */
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-body:    "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "Space Mono", ui-monospace, "SFMono-Regular", "Menlo", monospace;
+
+  /* Scala tipografica (fluida) */
+  --step--1: clamp(0.78rem, 0.75rem + 0.15vw, 0.86rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.09rem);
+  --step-1:  clamp(1.2rem, 1.12rem + 0.4vw, 1.45rem);
+  --step-2:  clamp(1.5rem, 1.35rem + 0.7vw, 2rem);
+  --step-3:  clamp(2rem, 1.7rem + 1.5vw, 3rem);
+  --step-4:  clamp(2.8rem, 2.1rem + 3.4vw, 5rem);
+  --step-5:  clamp(3.6rem, 2.4rem + 6vw, 8rem);
+
+  /* — Spaziature (base 8, ritmo modulare) — */
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 3rem;
+  --sp-6: 4.5rem;
+  --sp-7: 7rem;
+  --sp-8: 10rem;
+
+  /* — Layout — */
+  --maxw: 1320px;
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --radius: 4px;          /* squadrato: linguaggio tecnico, non "rounded-lg" */
+  --radius-lg: 8px;
+
+  /* — Ombre (fredde, tenui) — */
+  --shadow-1: 0 1px 2px rgba(14, 20, 32, 0.05);
+  --shadow-2: 0 10px 30px -12px rgba(14, 20, 32, 0.18);
+  --shadow-3: 0 24px 60px -20px rgba(14, 20, 32, 0.24);
+
+  /* — Motion — */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 0.25s;
+  --dur-2: 0.5s;
+  --dur-3: 0.9s;
+}
